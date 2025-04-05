@@ -86,7 +86,7 @@ export default function App() {
               <div className="flex items-center gap-4">
                 <Lottie
                   animationData={animation3}
-                  loop={false}
+                  loop
                   className="w-16 h-16 sm:w-20 sm:h-20"
                 />
                 <a
