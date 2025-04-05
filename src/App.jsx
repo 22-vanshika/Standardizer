@@ -70,7 +70,18 @@ export default function App() {
             >
               Upload & Standardize
             </button>
-
+            
+            {status === "Processing" && (
+              <div className="flex items-center">
+                <Lottie
+                  animationData={animation3}
+                  loop
+                  className="w-16 h-16 sm:w-20 sm:h-20"
+                />
+                <span className="text-green-200 text-xl ml-4">Processing...</span>
+              </div>
+            )}
+            
             {status === "successful" && downloadUrl && (
               <div className="flex items-center gap-4">
                 <Lottie
